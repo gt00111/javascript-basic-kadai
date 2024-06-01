@@ -1,4 +1,7 @@
 const square = (price) => {
-    console.log(price ** 2);
+    return price ** 2;
 }
-square(10);
+
+const result = square(10);
+
+console.log(result);
