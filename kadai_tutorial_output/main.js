@@ -82,11 +82,11 @@ const rankCheck = score => {
     if(score < 100){
         text = `あなたのランクはCです。\nBランクまであと${score}文字です。`
     }else if(score < 200){
-        `あなたのランクはBです。\nAランクまであと${score}文字です。`
+        text = `あなたのランクはBです。\nAランクまであと${score}文字です。`
     }else if(score < 300){
-        `あなたのランクはAです。\nSランクまであと${score}文字です。`
-    }else if(score => 300){
-        `あなたのランクはSです。\nおめでとうございます。`
+        text = `あなたのランクはAです。\nSランクまであと${score}文字です。`
+    }else if(score >= 300){
+        text = `あなたのランクはSです。\nおめでとうございます。`
     }
 
     // 生成したメッセージと一緒に文字列を返す
